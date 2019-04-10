@@ -1,0 +1,64 @@
+
+/* Universal */
+
+html {
+  font-family: "helvetica", sans-serif;
+  font-size: 16px;
+}
+
+
+/* Header Section */
+header {
+  height: 4rem;
+}
+
+.logo {
+  height: 2rem;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-grow: 1;
+}
+
+.logo span {
+  text-transform: capitalize;
+  /*  font-family: */
+}
+
+header nav span {
+  padding-right: 1rem;
+}
+
+header nav {
+  padding-right: 0.5rem;
+}
+
+/* Body General */
+
+.bigbox {
+  max-width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+/* Banner */
+
+.headline h1 {
+  font-size: 3rem;
+}
+
+.button {
+  background-color: darkgrey;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Info Section */
+
+
+/* Courses Section */
+
+
+/* Thesis Section */
+
+
+/* Footer Section */
