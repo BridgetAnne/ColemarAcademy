@@ -35,6 +35,10 @@ header {
   /*  font-family: */
 }
 
+.logo .strong {
+  font-weight: bold;
+}
+
 header nav span {
   padding-right: 1rem;
 }
@@ -51,19 +55,26 @@ header nav {
 /* Body General */
 
 .bigbox {
-  max-width: 60%;
+  width: 100%;
+  height: auto;
   padding: 2rem 1.5rem;
+}
+
+.bigbox img {
+  width: 100%;
+  height: auto;
 }
 
 /* Banner */
 
 .banner {
   background-color: lightgrey; /* COLORS */
-  padding-right: 5rem;
 }
 
 .headline {
-
+  width: 40%;
+  height: auto;
+  padding-right: 5rem;
 }
 
 .headline h1 {
