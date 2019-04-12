@@ -7,20 +7,22 @@ html {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   display: flex;
 }
 
 /* Header Section */
+
 header {
   height: 4rem;
   display: flex;
   align-items: center;
+  padding: 0 1.5rem;
 }
 
 .logo {
   height: 2rem;
-  padding-left: 1.5rem;
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -31,16 +33,11 @@ header {
 }
 
 .logo span {
-  /* text-transform: capitalize; */
-  /*  font-family: */
+  font-family: /* Add */
 }
 
 .logo .strong {
   font-weight: bold;
-}
-
-header nav span {
-  padding-right: 1rem;
 }
 
 header nav span a {
@@ -48,11 +45,13 @@ header nav span a {
   text-decoration: none;
 }
 
-header nav {
-  padding-right: 0.5rem;
-}
-
 /* Body General */
+
+/*
+.section {
+  padding: 2rem 0 2rem 1.5rem;
+}
+*/
 
 .bigbox {
   width: 100%;
@@ -65,14 +64,41 @@ header nav {
   height: auto;
 }
 
+.littlebox {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.box {
+  width: 65%;
+  height: 30%;
+  padding: 1rem;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: row;
+}
+
+.imgbox {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.text {
+  width: 100%;
+}
+
 /* Banner */
 
 .banner {
   background-color: lightgrey; /* COLORS */
+  align-items: center;
 }
 
 .headline {
-  width: 40%;
   height: auto;
   padding-right: 5rem;
 }
@@ -101,10 +127,14 @@ header nav {
   flex-wrap: wrap;
 }
 
+.course {
+  height: 30%;
+}
+
 /* Thesis Section */
 
 video {
-  max-width: 60%;
+  width: 100%;
 }
 
 /* Footer Section */
