@@ -6,10 +6,16 @@ html {
   font-size: 16px;
 }
 
+.container {
+  margin: 0 auto;
+  display: flex;
+}
 
 /* Header Section */
 header {
   height: 4rem;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -17,15 +23,25 @@ header {
   padding-left: 1.5rem;
   display: flex;
   flex-grow: 1;
+  align-items: center;
+}
+
+.logo img {
+  height: 2rem;
 }
 
 .logo span {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   /*  font-family: */
 }
 
 header nav span {
   padding-right: 1rem;
+}
+
+header nav span a {
+  color: black;
+  text-decoration: none;
 }
 
 header nav {
@@ -41,12 +57,21 @@ header nav {
 
 /* Banner */
 
+.banner {
+  background-color: lightgrey; /* COLORS */
+  padding-right: 5rem;
+}
+
+.headline {
+
+}
+
 .headline h1 {
   font-size: 3rem;
 }
 
 .button {
-  background-color: darkgrey;
+  background-color: grey;
   color: white;
   padding: 0.5rem;
   text-align: center;
@@ -54,11 +79,21 @@ header nav {
 
 /* Info Section */
 
+.info .container {
+  flex-direction: column;
+}
 
 /* Courses Section */
 
+.courses {
+  background-color: lightgrey;
+  flex-wrap: wrap;
+}
 
 /* Thesis Section */
 
+video {
+  max-width: 60%;
+}
 
 /* Footer Section */
