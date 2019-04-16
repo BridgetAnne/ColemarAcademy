@@ -74,17 +74,15 @@ header nav span a {
 
 .box img {
   width: 100%;
-  margin: 1rem;
+  /*margin: 1rem;*/
 }
 
 .box .imgbox {
   width: 35%;
+  padding: 1rem;
   height: auto;
 }
 
-.text {
-  width: 65%;
-}
 
 /* Banner */
 
@@ -94,7 +92,7 @@ header nav span a {
   align-items: center;
 }
 
-.headline {
+.banner .headline {
   height: auto;
   padding-right: 1.5rem;
 }
@@ -120,16 +118,59 @@ header nav span a {
   margin: 2rem 0 0.5rem 0;
 }
 
+.info .text {
+  width: 65%;
+}
 
 /* Courses Section */
 
 .courses {
   background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.courses .headline {
+  text-align: center;
+}
+.courses .headline h1 {
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.courses .container {
+  padding-bottom: 1rem;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .course {
-  height: 30%;
+  background-color: white;
+  width: 40%;
+  height: auto;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.course img {
+  width: 100%;
+}
+
+.course .text {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.course .text h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.course .text h4 {
+  margin: 0.5rem 0;
+}
+
+.course .text p {
+  margin: 0.5rem 0;
 }
 
 /* Thesis Section */
