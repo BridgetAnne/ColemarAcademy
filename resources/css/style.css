@@ -7,11 +7,8 @@ html {
 }
 
 .container {
-/*  width: 100%;
-  margin: 0 auto; */
   display: flex;
 }
-
 
 /* Header Section */
 
@@ -44,6 +41,7 @@ header {
 header nav span a {
   color: black;
   text-decoration: none;
+  padding-left: 1rem;
 }
 
 /* Body General */
@@ -62,27 +60,30 @@ header nav span a {
 
 .littlebox {
   width: 40%;
-  /*height: 100%;*/
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  /*justify-content: flex-start;*/
 }
 
 .box {
-  width: 100%;
-  height: 30%;
-  padding: 1rem;
+  width: 99.7%;
   border: 1px solid lightgrey;
   display: flex;
   flex-direction: row;
 }
 
 .box img {
-  max-width: 100%;
+  width: 100%;
+  margin: 1rem;
+}
+
+.box .imgbox {
+  width: 35%;
+  height: auto;
 }
 
 .text {
-  width: 100%;
+  width: 65%;
 }
 
 /* Banner */
@@ -95,7 +96,7 @@ header nav span a {
 
 .headline {
   height: auto;
-  padding-right: 5rem;
+  padding-right: 1.5rem;
 }
 
 .headline h1 {
@@ -115,11 +116,10 @@ header nav span a {
   flex-direction: column;
 }
 
-.info .littlebox .imgbox {
-  width: 35%;
-  height: auto;
-  margin-right: 1rem;
+.info .bigbox h1 {
+  margin: 2rem 0 0.5rem 0;
 }
+
 
 /* Courses Section */
 
