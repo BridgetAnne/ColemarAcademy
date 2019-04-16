@@ -13,6 +13,7 @@ html {
 /* Header Section */
 
 header {
+  background-color: hsl(220, 40%, 25%);
   height: 4rem;
   display: flex;
   align-items: center;
@@ -20,6 +21,7 @@ header {
 }
 
 .logo {
+  color: hsl(40, 70%, 60%);
   height: 2rem;
   display: flex;
   flex-grow: 1;
@@ -31,7 +33,8 @@ header {
 }
 
 .logo span {
-  font-family: /* Add */
+  color: hsl(40, 70%, 60%);
+  font-family: /* Add */;
 }
 
 .logo .strong {
@@ -39,7 +42,7 @@ header {
 }
 
 header nav span a {
-  color: black;
+  color: hsl(40, 70%, 60%);
   text-decoration: none;
   padding-left: 1rem;
 }
@@ -51,6 +54,11 @@ header nav span a {
   height: auto;
   margin: 2rem 1.5rem;
   display: flex;
+}
+
+.info .bigbox,
+.thesis .bigbox {
+  flex-direction: column;
 }
 
 .bigbox img {
@@ -70,11 +78,12 @@ header nav span a {
   border: 1px solid lightgrey;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .box img {
   width: 100%;
-  /*margin: 1rem;*/
+  height: auto;
 }
 
 .box .imgbox {
@@ -83,26 +92,48 @@ header nav span a {
   height: auto;
 }
 
+.info .text,
+.thesis .text {
+  width: 65%;
+}
+
+.text h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.text h4 {
+  margin: 0.5rem 0;
+}
+
+.text p {
+  margin: 0.5rem 0;
+}
 
 /* Banner */
 
 .banner {
-  background-color: lightgrey; /* COLORS */
+  /*background-color: hsl(20, 70%, 10%);*/
+  background-color: lightgrey;
   display: flex;
   align-items: center;
 }
 
+.banner .littlebox {
+  justify-content: center;
+  max-height: 70%;
+}
+
 .banner .headline {
+  width: 80%;
   height: auto;
-  padding-right: 1.5rem;
 }
 
 .headline h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .button {
-  background-color: grey;
+  background-color: gray;
   color: white;
   padding: 0.5rem;
   text-align: center;
@@ -110,16 +141,8 @@ header nav span a {
 
 /* Info Section */
 
-.info .bigbox {
-  flex-direction: column;
-}
-
 .info .bigbox h1 {
   margin: 2rem 0 0.5rem 0;
-}
-
-.info .text {
-  width: 65%;
 }
 
 /* Courses Section */
@@ -139,14 +162,14 @@ header nav span a {
 }
 
 .courses .container {
-  padding-bottom: 1rem;
+  padding: 0 3.5rem 1rem 3.5rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .course {
   background-color: white;
-  width: 40%;
+  width: 28%;
   height: auto;
   margin: 1rem;
   display: flex;
@@ -161,22 +184,36 @@ header nav span a {
   padding: 1rem 1rem 1rem 1rem;
 }
 
-.course .text h3 {
-  margin: 0 0 0.5rem 0;
-}
-
-.course .text h4 {
-  margin: 0.5rem 0;
-}
-
-.course .text p {
-  margin: 0.5rem 0;
-}
-
 /* Thesis Section */
 
 video {
   width: 100%;
 }
 
+.thesis .bigbox h3 {
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.thesis .bigbox p {
+  margin: 0 0;
+}
+
+
 /* Footer Section */
+
+footer {
+  background-color: lightgrey;
+  display: flex;
+  padding: 1rem 1.5rem;
+}
+
+footer span {
+  color: hsl(40, 70%, 60%);
+  flex-grow: 1;
+}
+
+footer nav span a {
+  color: hsl(40, 70%, 60%);
+  text-decoration: none;
+  padding-left: 1rem;
+}
