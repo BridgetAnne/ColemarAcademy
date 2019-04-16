@@ -68,7 +68,6 @@ header nav span a {
 
 .littlebox {
   width: 40%;
-  padding-top: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -96,17 +95,8 @@ header nav span a {
 .thesis .text {
   width: 65%;
 }
-
-.text h3 {
-  margin: 0 0 0.5rem 0;
-}
-
-.text h4 {
-  margin: 0.5rem 0;
-}
-
-.text p {
-  margin: 0.5rem 0;
+.text h3, .text h4, .text p {
+  margin: 0 0.5rem 0.5rem 0;
 }
 
 /* Banner */
@@ -143,6 +133,14 @@ header nav span a {
 
 .info .bigbox h1 {
   margin: 2rem 0 0.5rem 0;
+}
+
+.info .littlebox {
+  padding-top: 1rem;
+}
+
+.info .box:last-child {
+  background-color: lightgrey;
 }
 
 /* Courses Section */
@@ -186,8 +184,23 @@ header nav span a {
 
 /* Thesis Section */
 
+.thesis.container {
+  flex-direction: column;
+}
+
+.thesis .headline {
+  text-align: center;
+}
+.thesis .headline h1 {
+  margin: 2rem 0;
+}
+
 video {
   width: 100%;
+}
+
+.thesis .bigbox {
+  margin: 1rem 1.5rem 2rem 1.5rem;
 }
 
 .thesis .bigbox h3 {
@@ -195,9 +208,15 @@ video {
 }
 
 .thesis .bigbox p {
-  margin: 0 0;
+  margin: 0;
 }
 
+.thesis .box:first-child {
+  background-color: lightgrey;
+}
+
+.thesis .text p {
+  margin: 0 0.5rem 0 0;
 
 /* Footer Section */
 
