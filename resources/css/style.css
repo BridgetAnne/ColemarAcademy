@@ -6,6 +6,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   display: flex;
 }
@@ -286,6 +290,20 @@ footer nav span a {
     width: 100%;
   }
 
+  .box {
+    width: 100%;
+    border: none;
+    flex-direction: column;
+  }
+
+  .box .imgbox {
+    width: 100%;
+  }
+
+  .box img {
+    height: 100%;
+  }
+
   .banner .headline {
     width: 100%;
     height: auto;
@@ -318,18 +336,8 @@ footer nav span a {
     display: none;
   }
 
-  .box {
-    width: 100%;
-    border: none;
-    flex-direction: column;
-  }
-
-  .box .imgbox {
-    width: 100%;
-  }
-
-  .box img {
-    height: 100%;
-  }
+.thesis .bigbox {
+  margin: 0;
+}
 
 }
