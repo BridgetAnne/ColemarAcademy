@@ -248,9 +248,13 @@ footer nav span a {
   padding-left: 1rem;
 }
 
+/* Tablet Code */
+
+@media only screen and (max-width: 900px) {
+
 /* Mobile Code */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 600px) {
 
   .desktop {
     display: none;
@@ -278,8 +282,54 @@ footer nav span a {
     flex-direction: column;
   }
 
+  .littlebox {
+    width: 100%;
+  }
+
+  .banner .headline {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline h1 {
+    font-size: 2.25rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .headline h2 {
+    margin-bottom: 2rem;
+  }
+
+  .buttonbox {
+    margin: 1rem;
+  }
+
+  .button {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
   .info .bigbox {
     display: none;
+  }
+
+  .box {
+    width: 100%;
+    border: none;
+    flex-direction: column;
+  }
+
+  .box .imgbox {
+    width: 100%;
+  }
+
+  .box img {
+    height: 100%;
   }
 
 }
