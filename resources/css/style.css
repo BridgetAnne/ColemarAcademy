@@ -70,6 +70,7 @@ header nav span a {
   width: 40%;
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
 }
 
 .box {
@@ -135,10 +136,6 @@ header nav span a {
   margin: 2rem 0 0.5rem 0;
 }
 
-.info .littlebox {
-  padding-top: 1rem;
-}
-
 .info .box:last-child {
   background-color: lightgrey;
 }
@@ -191,8 +188,9 @@ header nav span a {
 .thesis .headline {
   text-align: center;
 }
+
 .thesis .headline h1 {
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 video {
