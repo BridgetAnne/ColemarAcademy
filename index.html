@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
   </head>
 
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <body>
 
 <!-- Header Section -->
@@ -14,13 +16,18 @@
     <header>
       <div class="logo">
         <img src="resources/assets/images/ic-logo.svg" alt="Lion logo">
-        <span class="strong">COLMAR</span><span>ACADEMY</span>
+        <span class="desktop" id="strong">COLMAR</span><span>ACADEMY</span>
       </div>
-      <nav>
+      <nav class="desktop">
         <span><a href="#">On campus</a></span>
         <span><a href="#">Online</a></span>
         <span><a href="#">For companies</a></span>
         <span><a href="#">Sign in</a></span>
+      </nav>
+      <nav class="mobile">
+        <span><a href="#"><img src="resources/assets/images/ic-on-campus.svg" alt="On campus logo"></a></span>
+        <span><a href="#"><img src="esources/assets/images/ic-online.svg" alt="Online logo"></a></span>
+        <span><a href="#"><img src="esources/assets/images/ic-login.svg" alt="Login logo"></a></span>
       </nav>
     </header>
 
@@ -44,7 +51,7 @@
 <!-- Information Section -->
 
     <div class="info container">
-        <div class="bigbox">
+        <div class="bigbox desktop">
           <div class="imgbox">
             <img src="resources/assets/images/information-main.jpg" alt="Man reading">
           </div>
@@ -94,7 +101,7 @@
       <div class="headline">
         <h1>Start learning</h1>
       </div>
-      <div class="container">
+      <div class="container desktop">
         <div class="course">
           <img src="resources/assets/images/course-software.jpg" alt="Computers">
           <div class="text">
@@ -145,6 +152,26 @@
           </div>
         </div>
       </div>
+      <div class="container mobile">
+        <div class="crsbutton">
+          Software engineering
+        </div>
+        <div class="crsbutton">
+          Computer art
+        </div>
+        <div class="crsbutton">
+          Design
+        </div>
+        <div class="crsbutton">
+          Data
+        </div>
+        <div class="crsbutton">
+          Business
+        </div>
+        <div class="crsbutton">
+          Marketing
+        </div>
+      </div>
     </div>
 
 <!-- Thesis Section -->
@@ -157,11 +184,11 @@
         <div class="bigbox">
           <video src="resources/assets/videos/thesis.mp4" autoplay poster="posterimage.jpg" controls></video>
           <h3>Reimagine urban</h3>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+          <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
             nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex.
             Etiam eget magna laoreet, eficitur dolor consequat, tristique ligula."</p>
         </div>
-        <div class="littlebox">
+        <div class="littlebox desktop">
           <div class="box">
             <div class="imgbox">
               <img src="resources/assets/images/thesis-fisma.jpg" alt="Professor with glasses">
@@ -188,7 +215,7 @@
 
     <footer>
       <span>&copy 2016 Colmar Academy. All rights reserved</span>
-      <nav>
+      <nav class="desktop">
         <span><a href="#">Terms</a></span>
         <span><a href="#">Privacy</a></span>
       </nav>

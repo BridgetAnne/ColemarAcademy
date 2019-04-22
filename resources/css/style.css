@@ -37,7 +37,7 @@ header {
   font-family: /* Add */;
 }
 
-.logo .strong {
+.logo #strong {
   font-weight: bold;
 }
 
@@ -45,6 +45,10 @@ header nav span a {
   color: hsl(40, 70%, 60%);
   text-decoration: none;
   padding-left: 1rem;
+}
+
+.mobile {
+  display: none;
 }
 
 /* Body General */
@@ -233,4 +237,43 @@ footer nav span a {
   color: hsl(40, 70%, 60%);
   text-decoration: none;
   padding-left: 1rem;
+}
+
+/* Mobile Code */
+
+@media only screen and (max-width: 960px) {
+
+  #desktop {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  header nav span a {
+    background-color: hsl(40, 70%, 60%);
+    padding-left: 1.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .bigbox {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info .bigbox {
+    display: none;
+  }
+
 }
