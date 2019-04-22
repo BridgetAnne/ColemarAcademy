@@ -104,6 +104,7 @@ header nav span a {
 .thesis .text {
   width: 65%;
 }
+
 .text h3, .text h4, .text p {
   margin: 0 0.5rem 0.5rem 0;
 }
@@ -263,18 +264,14 @@ footer nav span a {
 
 @media only screen and (max-width: 600px) {
 
+  /* Universal  */
+
   .desktop {
     display: none;
   }
 
   .mobile {
     display: flex;
-  }
-
-  header nav span a {
-    padding-left: 1.5rem;
-    display: flex;
-    align-items: center;
   }
 
   .container {
@@ -291,6 +288,7 @@ footer nav span a {
 
   .littlebox {
     width: 100%;
+    padding: 0;
   }
 
   .box {
@@ -300,8 +298,8 @@ footer nav span a {
   }
 
   .box .imgbox {
-    width: 100%;
-    padding: 0;
+    width: 92%;
+    padding: 1rem;
   }
 
   .box img {
@@ -328,12 +326,72 @@ footer nav span a {
     padding: 0.5rem;
   }
 
+  /* Header Section */
+
+  header nav span a {
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Info Section */
+
+  .info .littlebox {
+    margin-bottom: 2rem;
+  }
+
   .info .bigbox {
     display: none;
   }
 
-.thesis .bigbox {
-  margin: 0;
-}
+  .info .box {
+    margin:
+  }
+
+  .info .box:nth-child(2n+2) {
+    margin: 3rem 0 3rem 0;
+  }
+
+  .info .box:last-child {
+    background-color: white;
+  }
+
+  .info .text,
+  .thesis .text {
+    width: 100%;
+  }
+
+  .text h3, .text h4, .text p, .info a {
+    margin: 0.5rem 2rem;
+  }
+
+  .info a {
+    margin-bottom: 1rem;
+  }
+
+
+    /* Courses Section */
+
+  .courses {
+    background-color: white;
+  }
+
+  .courses .container {
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
+
+  .crsbutton {
+    background-color: lightgray;
+    color: gray;
+    padding: 1rem 1rem 1.5rem 1rem;
+    margin-top: .5rem;
+    text-align: center;
+  }
+
+  /* Thesis Section */
+
+  .thesis .bigbox {
+    margin: 0 0 1.5rem 0;
+  }
 
 }
