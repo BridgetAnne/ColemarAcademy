@@ -37,7 +37,7 @@ header {
   font-family: /* Add */;
 }
 
-.logo #strong {
+.logo .strong {
   font-weight: bold;
 }
 
@@ -219,6 +219,7 @@ video {
 
 .thesis .text p {
   margin: 0 0.5rem 0 0;
+}
 
 /* Footer Section */
 
@@ -230,7 +231,15 @@ footer {
 
 footer span {
   color: hsl(40, 70%, 60%);
+}
+
+.footertext {
+  display: flex;
   flex-grow: 1;
+}
+
+footer span i {
+  padding: 0 0.15rem;
 }
 
 footer nav span a {
@@ -243,10 +252,6 @@ footer nav span a {
 
 @media only screen and (max-width: 960px) {
 
-  #desktop {
-    display: none;
-  }
-
   .desktop {
     display: none;
   }
@@ -256,8 +261,9 @@ footer nav span a {
   }
 
   header nav span a {
-    background-color: hsl(40, 70%, 60%);
     padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
   }
 
   .container {
