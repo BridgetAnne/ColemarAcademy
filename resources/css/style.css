@@ -16,31 +16,56 @@ body {
   display: flex;
 }
 
-/*
+/* Universal Styles */
 
-img, .button, .box, .logo, a, video {
+.banner, .courses {
+  background-color: hsla(220, 40%, 15%, 1);
+}
+
+.info, .thesis {
+  background-color: hsla(46, 40%, 70%, 0.5);
+  background-color: hsla(40, 10%, 75%, 1);
+
+}
+
+img, a, .button, .box, .logo, .course, .course .text, video {
   box-shadow: 0.5px 0.5px 3px hsla(40, 0%, 0%, 1);
   border-radius: 0.5rem;
 }
 
-img, .button, .box, .logo, a {
-  transition: all 80ms linear;
+.box img {
+  box-shadow: none;
 }
 
-
-.button, .logo, .banner h1, a {
+a, .button, .logo, .banner h1 {
   text-shadow: 0.5px 0.5px 3px hsla(40, 0%, 0%, 1);
 }
 
-.box:hover, .course .text:hover {
-
+.box, .course .text {
+  background-color: hsla(200, 10%, 95%, 1);
 }
 
-:first-child {
-
+.info .box:last-child, .thesis .box:first-child {
+  background-color: hsla(220, 40%, 15%, 1);
+  color: hsla(40, 80%, 60%, 1);
 }
 
-*/
+.box:hover, .info .box:hover,
+.thesis .box:hover {
+  background-color: hsla(180, 100%, 15%, 1);
+  color: white;
+  box-shadow: 3px 3px 4px hsla(40, 0%, 0%, 1);
+}
+
+.course .text:hover {
+  background-color: hsla(40, 10%, 58%, 1);
+  color: white;
+  box-shadow: 3px 3px 4px hsla(40, 0%, 0%, 1);
+}
+
+a, .button, .box, .course .text, .thesis .box {
+  transition: all 80ms linear;
+}
 
 .cursive {
   font-family: "Parisienne", "helvetica", sans-serif;
@@ -82,9 +107,6 @@ header {
   padding: 0.5rem;
   display: flex;
   align-items: center;
-  text-shadow: 1px 1px 3px hsla(40, 0%, 0%, 1); /**/
-  box-shadow: 0.5px 0.5px 3px hsla(40, 0%, 0%, 1); /**/
-  border-radius: 0.5rem; /**/
 }
 
 .logo img {
@@ -108,26 +130,23 @@ header {
 
 .navbox {
   display: flex;
+  justify-content: flex-end;
   flex-grow: 1;
 }
 
 header nav span a {
   background-color: hsla(40, 10%, 65%, 1);
-  color: hsla(80, 20%, 90%, 1);
+  color: hsla(200, 10%, 95%, 1);
   text-align: center;
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem;
-  text-shadow: 1px 1px 3px hsla(40, 0%, 0%, 1); /**/
-  box-shadow: 1px 1px 4px hsla(40, 0%, 18%, 1); /**/
-  border-radius: 0.5rem; /**/
 }
 
 header nav span a:hover {
   background-color: hsla(40, 10%, 75%, 1);
   color: hsla(180, 50%, 25%, 1);
   text-shadow: none;
-  box-shadow: 1px 1px 4px hsla(40, 0%, 18%, 1); /**/
   transition: all 80ms linear; /**/
 }
 
@@ -136,11 +155,6 @@ header nav span a:hover {
 }
 
 /* Body General */
-
-img {
-  border-radius: 0.5rem; /**/
-  box-shadow: 1px 1px 4px hsla(40, 0%, 0%, 1); /**/
-}
 
 .bigbox {
   width: 60%;
@@ -157,7 +171,6 @@ img {
 .bigbox img {
   width: 100%;
   height: 100%;
-  border-radius: 0.5rem; /**/
 }
 
 .littlebox {
@@ -168,21 +181,16 @@ img {
 }
 
 .box {
-  background-color: hsla(80, 20%, 90%, 1);
   width: 99.7%;
-  border: 1px solid hsla(40, 30%, 18%, 1);
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 0.5rem; /**/
-  box-shadow: 1px 1px 4px hsla(40, 0%, 18%, 1); /**/
+  margin: 1px 0;
 }
 
 .box img {
-  background-color: hsla(220, 40%, 15%, 1);
   width: 100%;
   height: auto;
-  border-radius: 0.5rem; /**/
 }
 
 .box .imgbox {
@@ -203,7 +211,6 @@ img {
 /* Banner */
 
 .banner {
-  background-color: hsla(220, 40%, 15%, 1);
   display: flex;
   align-items: center;
 }
@@ -221,8 +228,7 @@ img {
 
 .banner h1 {
   font-size: 3rem;
-  color: hsla(80, 20%, 90%, 1);
-  text-shadow: 1px 1px 3px hsla(40, 0%, 0%, 1); /**/
+  color: hsla(200, 10%, 95%, 1);
   font-weight: normal;
   margin: 1rem 0;
 }
@@ -246,51 +252,36 @@ img {
   text-align: center;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 0.5rem; /**/
-  box-shadow: 1px 1px 4px hsla(40, 0%, 0%, 1); /**/
-  text-shadow: 0.5px 0.5px 3px hsla(40, 0%, 0%, 1); /**/
 }
 
 .button a:hover {
   background-color: hsla(40, 10%, 75%, 1);
   color: hsla(180, 50%, 25%, 1);
   text-shadow: none;
-  box-shadow: 0.5px 0.5px 3px hsla(40, 0%, 0%, 1); /**/
-  transition: all 80ms linear; /**/
 }
-
 
 /* Info Section */
-
-.info {
-  background-color: hsla(46, 40%, 70%, 0.5);
-}
 
 .info .bigbox h1 {
   font-weight: bold;
   margin: 2rem 0 0.5rem 0;
 }
 
-.info .box:last-child {
-  background-color: hsla(220, 40%, 15%, 1);
-  color: hsla(40, 80%, 60%, 1);
-}
-
-.info .box:hover {
-  background-color: hsla(40, 10%, 58%, 1); /**/
-  color: hsla(40, 80%, 60%, 1); /**/
-}
-
 .text a {
-  color: hsla(180, 100%, 30%, 1);
+  color: hsla(40, 10%, 58%, 1);
   text-decoration: none;
   font-weight: bold;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.text a:hover {
+  color: hsla(40, 70%, 60%, 1);
 }
 
 /* Courses Section */
 
 .courses {
-  background-color: hsla(220, 40%, 15%, 1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -311,19 +302,12 @@ img {
 }
 
 .course {
-  background-color: hsla(220, 40%, 15%, 1);
   width: 28%;
   height: auto;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border-radius: 0.5rem;
-}
-
-.course .text:hover {
-  background-color: hsla(40, 10%, 58%, 1); /**/
-  color: hsla(40, 80%, 60%, 1); /**/
 }
 
 .course img {
@@ -331,9 +315,7 @@ img {
 }
 
 .course .text {
-  background-color: hsla(80, 20%, 90%, 1);
   padding: 1rem 1rem 1rem 1rem;
-  border-radius: 0.5rem;
 }
 
 .course h4 {
@@ -342,28 +324,17 @@ img {
 
 /* Thesis Section */
 
-.thesis {
-  background-color: hsla(46, 40%, 70%, 0.5);
-}
-
 .thesis.container {
   flex-direction: column;
 }
 
-.thesis .headline {
-  text-align: center;
-}
-
-/* ^ v */
-
 .thesis .headline h1 {
   margin: 2rem 0 1rem 0;
+  text-align: center;
 }
 
 video {
   width: 100%;
-  border-radius: 0.5rem; /**/
-  box-shadow: 1px 1px 4px hsla(40, 0%, 18%, 1); /**/
 }
 
 .thesis .bigbox {
@@ -378,17 +349,6 @@ video {
   margin: 0;
 }
 
-.thesis .box:first-child {
-  background-color: hsla(220, 40%, 15%, 1); /**/
-  color: hsla(40, 80%, 60%, 1); /**/
-}
-
-.thesis .box:hover {
-  background-color: hsla(40, 10%, 58%, 1); /**/
-  color: hsla(40, 80%, 60%, 1); /**/
-
-}
-
 .thesis .text p {
   margin: 0 0.5rem 0 0;
 }
@@ -397,14 +357,14 @@ video {
 
 footer {
   background-color: hsla(40, 10%, 38%, 1);
-  display: flex;
   padding: 1rem 1.5rem;
   border-top: 1px solid hsla(40, 30%, 18%, 1);
+  display: flex;
+  align-items: center;
 }
 
-footer span { /* Adjust? And incl below */
+footer span, footer span i, footer nav span a {
   color: hsl(40, 70%, 60%);
-  color: hsla(220, 100%, 15%, 1);
 }
 
 .footertext {
@@ -412,22 +372,22 @@ footer span { /* Adjust? And incl below */
   flex-grow: 1;
 }
 
-footer span i { /* Adjust? */
-  padding: 0 0.15rem;
-  color: hsla(40, 70%, 60%, 1);
+footer span a {
+  box-shadow: none;
 }
 
-footer span i:hover {
-  color: hsla(180, 50%, 25%, 1);
+footer span i {
+  padding: 0.5rem;
+  text-shadow: none;
 }
 
-footer nav span a { /* Adjust? */
-  color: hsla(40, 70%, 60%, 1);
-  text-decoration: none;
+footer nav span a {
   padding-left: 1rem;
+  text-decoration: none;
+  text-shadow: none;
 }
 
-footer nav span a:hover {
+footer span i:hover, footer nav span a:hover {
   color: hsla(180, 50%, 25%, 1);
 }
 
@@ -498,15 +458,30 @@ footer nav span a:hover {
     background-color: gray;
     color: white;
     text-align: center;
-    padding: 0.5rem;
   }
 
   /* Header Section */
 
   header nav span a {
-    padding-left: 1.5rem;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
     display: flex;
     align-items: center;
+    box-shadow: ;
+  }
+
+  header nav span a:last-child {
+    padding: ;
+  }
+
+  nav img {
+    box-shadow: none;
+  }
+
+  /* Banner Section */
+
+  .banner h1 {
+    font-size: 3rem;
   }
 
   /* Info Section */
@@ -524,7 +499,11 @@ footer nav span a:hover {
   }
 
   .info .box:nth-child(2n+2) {
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0;
+  }
+
+  .info .box .text {
+    padding-bottom: 1rem;
   }
 
   .info .box:last-child {
@@ -543,7 +522,6 @@ footer nav span a:hover {
   .info a {
     margin-bottom: 1rem;
   }
-
 
     /* Courses Section */
 
