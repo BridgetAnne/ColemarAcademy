@@ -2,7 +2,8 @@
 /* Universal */
 
 html {
-  font-family: "helvetica", sans-serif;
+  font-family: "Montserrat", "helvetica", sans-serif;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -12,6 +13,25 @@ body {
 
 .container {
   display: flex;
+}
+
+h1 {
+  font-family: "Raleway", "helvetica", sans-serif;
+  font-size: 2.5rem;
+}
+
+.courses h1, .thesis h1 {
+  font-family: "Montserrat", "helvetica", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 /* Header Section */
@@ -37,15 +57,18 @@ header {
 }
 
 .logo span {
-  color: hsl(40, 70%, 60%);
-  font-family: /* Add */;
+  font-family: "Cinzel", "helvetica", sans-serif;
+  color: hsl(40, 80%, 40%);
+  font-size: 2rem;
 }
 
 .logo .strong {
+  color: hsl(40, 70%, 60%);
   font-weight: bold;
 }
 
 header nav span a {
+  font-weight: 400;
   color: hsl(40, 70%, 60%);
   text-decoration: none;
   padding-left: 1rem;
@@ -125,14 +148,8 @@ header nav span a {
   margin: 1rem 0;
 }
 
-/*
-.banner .headline {
-  width: 80%;
-  height: auto;
-} */
-
 .littlebox h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .button {
