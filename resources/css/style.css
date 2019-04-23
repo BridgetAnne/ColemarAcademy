@@ -3,6 +3,7 @@
 
 html {
   font-family: "Montserrat", "helvetica", sans-serif;
+  color: hsla(220, 100%, 15%, 1);
   font-weight: 300;
   font-size: 16px;
 }
@@ -37,15 +38,15 @@ h3 {
 /* Header Section */
 
 header {
-  background-color: hsl(220, 40%, 25%);
+  background-color: hsla(220, 40%, 10%, 1);
   height: 4rem;
   display: flex;
   align-items: center;
   padding: 0 1.5rem;
+  border-bottom: 1px solid hsla(40, 70%, 60%, 1);
 }
 
 .logo {
-  color: hsl(40, 70%, 60%);
   height: 2rem;
   display: flex;
   flex-grow: 1;
@@ -58,20 +59,24 @@ header {
 
 .logo span {
   font-family: "Cinzel", "helvetica", sans-serif;
-  color: hsl(40, 80%, 40%);
+  color: hsla(40, 80%, 40%, 1);
   font-size: 2rem;
 }
 
 .logo .strong {
-  color: hsl(40, 70%, 60%);
+  color: hsla(40, 70%, 60%, 1);
   font-weight: bold;
 }
 
 header nav span a {
-  font-weight: 400;
-  color: hsl(40, 70%, 60%);
+  color: hsla(40, 70%, 60%, 1);
   text-decoration: none;
+  font-weight: 500;
   padding-left: 1rem;
+}
+
+header nav span a:hover {
+  color: hsla(180, 50%, 25%, 1);
 }
 
 .mobile {
@@ -135,8 +140,7 @@ header nav span a {
 /* Banner */
 
 .banner {
-  /*background-color: hsl(20, 70%, 10%);*/
-  background-color: lightgrey;
+  background-color: hsla(220, 40%, 15%, 1);
   display: flex;
   align-items: center;
 }
@@ -148,18 +152,39 @@ header nav span a {
   margin: 1rem 0;
 }
 
+.banner h1, .banner h2, .buttonbox {
+  margin-right: 1.5rem;
+}
+
+.banner h1 {
+  font-family: "Cinzel", "helvetica", sans-serif;
+  color: hsla(40, 70%, 60%, 1);
+  font-weight: normal;
+}
+
+.banner h2 {
+  color: hsla(40, 80%, 40%, 1);
+  font-weight: normal;
+}
+
 .littlebox h1 {
   font-size: 3rem;
 }
 
 .button {
-  background-color: gray;
-  color: white;
+  background-color: hsla(40, 60%, 80%, 1);
+  color: hsla(40, 80%, 20%, 1);
+  color: hsla(180, 100%, 15%, 1);
+  font-weight: 600;
   padding: 0.5rem;
   text-align: center;
 }
 
 /* Info Section */
+
+.info {
+  background-color: hsla(46, 40%, 70%, 0.5);
+}
 
 .info .bigbox h1 {
   margin: 2rem 0 0.5rem 0;
@@ -169,10 +194,16 @@ header nav span a {
   background-color: lightgrey;
 }
 
+.text a {
+  color: hsla(180, 100%, 30%, 1);
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Courses Section */
 
 .courses {
-  background-color: lightgrey;
+  background-color: hsla(220, 40%, 15%, 1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,6 +240,10 @@ header nav span a {
 }
 
 /* Thesis Section */
+
+.thesis {
+  background-color: hsla(46, 40%, 70%, 0.5);
+}
 
 .thesis.container {
   flex-direction: column;
