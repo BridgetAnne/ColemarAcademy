@@ -23,12 +23,10 @@ body {
 }
 
 .info, .thesis {
-  background-color: hsla(46, 40%, 70%, 0.5);
   background-color: hsla(40, 10%, 75%, 1);
-
 }
 
-img, a, .button, .box, .logo, .course, .course .text, video {
+img, a, .button, .box, .logo, .course, .course .text, .crsbutton, video {
   box-shadow: 0.5px 0.5px 3px hsla(40, 0%, 0%, 1);
   border-radius: 0.5rem;
 }
@@ -116,8 +114,8 @@ header {
 
 .logo span {
   font-family: "Cinzel", "helvetica", sans-serif;
-  color: hsla(40, 80%, 40%, 1);
   color: hsla(80, 20%, 90%, 1);
+  color: hsla(40, 80%, 40%, 1);
 
   font-size: 2rem;
   padding: 0.5rem 0.5rem 0.5rem 0;
@@ -269,6 +267,7 @@ header nav span a:hover {
 
 .text a {
   color: hsla(40, 10%, 58%, 1);
+  margin-bottom: 1rem;
   text-decoration: none;
   font-weight: bold;
   box-shadow: none;
@@ -303,11 +302,11 @@ header nav span a:hover {
 
 .course {
   width: 28%;
-  height: auto;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  box-shadow: none;
 }
 
 .course img {
@@ -315,6 +314,7 @@ header nav span a:hover {
 }
 
 .course .text {
+  color: hsla(40, 100%, 25%, 1);
   padding: 1rem 1rem 1rem 1rem;
 }
 
@@ -393,13 +393,135 @@ footer span i:hover, footer nav span a:hover {
 
 /* Tablet Code */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
+
+    .banner.container {
+      flex-direction: column;
+    }
+
+    .bigbox {
+      width: 80%;
+    }
+
+    .banner .littlebox {
+      width: 90%;
+      margin: 0 0 2rem 0;
+      text-align: center;
+    }
+
+    .banner h1 {
+      margin-top: 0;
+    }
+
+    .buttonbox {
+      margin-top: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 810px) {
+
+  .navbox .desktop {
+    display: none;
+  }
+
+  .navbox .mobile {
+    display: flex;
+  }
+
+  header nav span a {
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav span a:hover {
+    background-color: hsla(40, 60%, 70%, 1);
+  }
+
+  nav img {
+    box-shadow: none;
+  }
+
+  .info .desktop {
+    display: none;
+  }
+
+  .info .mobile {
+    display: flex;
+  }
+
+  .info .littlebox {
+    width: 100%;
+    padding-bottom: 1rem;
+    flex-direction: row;
+  }
+
+  .info .box:last-child {
+    background-color: hsla(200, 10%, 95%, 1);
+    color: hsla(220, 100%, 15%, 1);
+  }
+
+  .info .box:last-child:hover {
+    background-color: hsla(180, 100%, 15%, 1);
+    color: white;
+    box-shadow: 3px 3px 4px hsla(40, 0%, 0%, 1);
+  }
+
+  .info .box {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    flex-direction: column
+  }
+
+  .info .box .imgbox {
+    width: 92%;
+    padding: 1rem;
+  }
+
+  .info .box img {
+    height: 100%;
+  }
+
+  .info .text {
+    width: 90%;
+  }
+
+  .course {
+    margin: 2rem;
+  }
+
+  .course h3 {
+    font-size: 1.25rem;
+  }
+
+  .thesis .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thesis .littlebox {
+    width: 100%;
+    flex-direction: row;
+    padding-bottom: 1rem;
+  }
+
+  .thesis .box {
+    width: 50%;
+  }
+
+}
 
 /* Mobile Code */
 
 @media only screen and (max-width: 600px) {
 
-  /* Universal  */
+  /* Mobile Universal  */
 
   .desktop {
     display: none;
@@ -421,22 +543,6 @@ footer span i:hover, footer nav span a:hover {
     flex-direction: column;
   }
 
-  .littlebox {
-    width: 100%;
-    padding: 0;
-  }
-
-  .box {
-    width: 100%;
-    border: none;
-    flex-direction: column;
-  }
-
-  .box .imgbox {
-    width: 92%;
-    padding: 1rem;
-  }
-
   .box img {
     height: 100%;
   }
@@ -455,47 +561,75 @@ footer span i:hover, footer nav span a:hover {
   }
 
   .button {
-    background-color: gray;
-    color: white;
-    text-align: center;
+    box-shadow: none;
   }
 
-  /* Header Section */
+  /* Mobile Header Section */
+
+  .logo {
+    background-color: hsla(40, 70%, 60%, 1);
+  }
 
   header nav span a {
+    height: 2rem;
+    width: 2rem;
     padding: 0.5rem;
     margin: 0 0.5rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-    box-shadow: ;
   }
 
-  header nav span a:last-child {
-    padding: ;
+  header nav span a:hover {
+    background-color: hsla(40, 60%, 70%, 1);
   }
 
   nav img {
     box-shadow: none;
   }
 
-  /* Banner Section */
+  /* Mobile Banner Section */
+
+  .banner .littlebox {
+    width: 100%;
+  }
+
+  .banner h1, .banner h2 {
+    text-align: left;
+  }
 
   .banner h1 {
     font-size: 3rem;
   }
 
-  /* Info Section */
-
-  .info .littlebox {
-    margin-bottom: 2rem;
+  .banner a {
+    padding: 0.5rem 4rem;
+    width: 80%;
   }
+
+  /* Mobile Info Section */
 
   .info .bigbox {
     display: none;
   }
 
+  .info .littlebox {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+
   .info .box {
-    margin:
+    width: 100%;
+    padding: 0;
+    border: none;
+    flex-direction: column;
+  }
+
+  .info .box .imgbox {
+    width: 92%;
+    padding: 1rem;
   }
 
   .info .box:nth-child(2n+2) {
@@ -506,8 +640,8 @@ footer span i:hover, footer nav span a:hover {
     padding-bottom: 1rem;
   }
 
-  .info .box:last-child {
-    background-color: white;
+  .info .box h3, .info .box p, .info .box a {
+    margin: 0.5rem 1rem;
   }
 
   .info .text,
@@ -519,14 +653,10 @@ footer span i:hover, footer nav span a:hover {
     margin: 0.5rem 2rem;
   }
 
-  .info a {
-    margin-bottom: 1rem;
-  }
-
-    /* Courses Section */
+    /* Mobile Courses Section */
 
   .courses {
-    background-color: white;
+    background-color: hsla(220, 40%, 15%, 1);
   }
 
   .courses .container {
@@ -534,17 +664,30 @@ footer span i:hover, footer nav span a:hover {
   }
 
   .crsbutton {
-    background-color: lightgray;
-    color: gray;
+    background-color: hsla(200, 10%, 95%, 1);
+    color: hsla(40, 30%, 38%, 1);
+    font-weight: bold;
     padding: 1rem 1rem 1.5rem 1rem;
-    margin-top: .5rem;
+    margin-bottom: .5rem;
     text-align: center;
+    box-shadow: 0.5px 0.5px 3px hsla(40, 0%, 0%, 1);
   }
 
-  /* Thesis Section */
+  .crsbutton:hover {
+    background-color: hsla(180, 100%, 15%, 1);
+    color: white;
+    box-shadow: 3px 3px 4px hsla(40, 0%, 0%, 1);
+    text-shadow: 0.5px 0.5px 3px hsla(40, 0%, 0%, 1);
+  }
+
+  /* Mobile Thesis Section */
 
   .thesis .bigbox {
     margin: 0 0 1.5rem 0;
   }
 
-}
+  /* Mobile Footer Section */
+
+  footer span i {
+    padding: 0.25rem;
+  }
